@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Voices of the Past — Multi-Ancestor Edition</title>
+<title>Voices of the Past — Cloud Memory Edition</title>
 <style>
 :root{--ink:#342619;--brown:#654726;--paper:#f7ecd2;--paper2:#ead5a8;--line:#b49465;--blue:#dfe8eb;--shadow:rgba(0,0,0,.22)}
 *{box-sizing:border-box}body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:linear-gradient(rgba(50,38,25,.16),rgba(50,38,25,.16)),linear-gradient(#9eb6ba,#c6a16f);min-height:100vh}button,input,select,textarea{font:inherit}.app{width:min(1600px,98%);margin:auto;padding:10px}.topbar{position:sticky;top:0;z-index:15;display:grid;grid-template-columns:170px 1.15fr 1.35fr 1fr auto;gap:12px;align-items:center;background:var(--paper);border:3px solid var(--brown);border-radius:11px;padding:11px;box-shadow:0 5px 16px var(--shadow)}.logo{text-align:center;font-weight:700;font-size:21px;letter-spacing:1.4px}.control label{display:block;font-weight:700;margin-bottom:4px}.control select{width:100%;padding:8px;border:1px solid #927657;border-radius:6px;background:#fffaf0}.yearRow{display:flex;gap:9px;align-items:center}.yearRow input{flex:1}.yearBox{font-size:26px;font-weight:700;background:#fffaf0;border:1px solid #ad9169;border-radius:6px;padding:4px 12px;min-width:82px;text-align:center}.toolbar{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.primary,.secondary,.danger,.green{border:0;border-radius:6px;padding:8px 11px;cursor:pointer}.primary{background:var(--brown);color:white}.secondary{background:#e6d4ae;color:var(--ink);border:1px solid #ae8d61}.green{background:#4f742f;color:white}.danger{background:#9d4938;color:white}.main{display:grid;grid-template-columns:38% 62%;gap:9px;margin-top:9px;height:calc(100vh - 108px);min-height:610px;max-height:900px}.panel{background:var(--paper);border:3px solid var(--brown);border-radius:11px;overflow:hidden;box-shadow:0 5px 16px var(--shadow)}.portraitArea{height:100%;position:relative;background:#8da79d;overflow:hidden}.portraitArea img{width:100%;height:100%;object-fit:cover;display:block}.nameOverlay{position:absolute;left:0;right:0;bottom:0;padding:70px 20px 18px;color:white;text-align:center;background:linear-gradient(transparent,rgba(0,0,0,.82))}.nameOverlay h1{font-size:34px;margin:0 0 7px}.nameOverlay p{margin:4px}.chatPanel{display:flex;flex-direction:column;min-height:0;height:100%}.chatHeader{padding:16px;border-bottom:1px solid #ccb38a}.chatHeader strong{font-size:20px}.suggestions{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:11px}.suggestion{border:1px solid #b69b73;background:#f2e2bf;padding:9px;border-radius:5px;cursor:pointer}.suggestion:hover{background:#e7cd99}.chat{flex:1;overflow-y:auto;padding:18px;min-height:0}.message{margin-bottom:17px}.message.you{text-align:right}.bubble{display:inline-block;max-width:84%;text-align:left;padding:12px 15px;border-radius:11px;line-height:1.45;font-size:16px}.message.you .bubble{background:var(--blue)}.message.ancestor .bubble{background:#f0deb7;border:1px solid #c4a878}.speaker{font-size:12px;font-weight:700;margin-bottom:3px}.thinking{font-style:italic;opacity:.65}.inputArea{display:flex;gap:8px;padding:13px;border-top:1px solid #cbb28a}.inputArea input{flex:1;padding:12px;border:1px solid #927a5c;border-radius:6px}.internetStatus{padding:0 14px 8px;font-size:12px;color:#735e43;min-height:21px}.optionalArea{margin-top:9px}.collapsible{background:var(--paper);border:3px solid var(--brown);border-radius:11px;margin-top:9px;box-shadow:0 4px 12px var(--shadow);overflow:hidden}.collapsible summary{cursor:pointer;font-weight:700;font-size:17px;padding:12px 15px;background:#efdfbb;list-style:none}.collapsible summary::-webkit-details-marker{display:none}.collapsible summary:after{content:' +';float:right}.collapsible[open] summary:after{content:' −'}.collapsibleBody{padding:11px 13px}.bioGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.bioCard{padding:12px;border:1px solid var(--line);background:#f8e9c7;border-radius:8px}.bioLine{margin:7px 0}.researchHeader{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}.researchActions{display:flex;gap:6px;flex-wrap:wrap}.researchList{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:8px;max-height:650px;overflow:auto}.factCard{border:1px solid #d2bea0;background:#fff8e9;border-radius:7px;padding:10px}.factTop{display:flex;justify-content:space-between;gap:7px}.factDate{font-weight:700}.factType{font-size:12px;background:#e9d6ae;border-radius:12px;padding:2px 7px}.factPerson{font-size:12px;font-weight:700;color:#68492c;margin-top:4px}.factText{margin:5px 0}.factPlace{font-size:12px;color:#715d45}.factBtns{display:flex;gap:8px;margin-top:5px}.textBtn{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#62462d}.timelineItems{display:flex;justify-content:flex-start;gap:0;position:relative;margin-top:14px;overflow-x:auto;padding-bottom:8px}.timelineItems:before{content:"";position:absolute;left:30px;right:30px;top:9px;height:2px;background:#a98b61}.timelineItem{position:relative;z-index:1;text-align:center;min-width:100px;font-size:12px}.dot{width:13px;height:13px;border-radius:50%;background:#c5a775;border:2px solid #8b6b42;margin:3px auto 4px}.timelineItem.current .dot{background:#a13f2c;transform:scale(1.45)}.timelineItem.current{color:#a13f2c;font-weight:700}.modalBack{display:none;position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:30;align-items:center;justify-content:center;padding:18px}.modal{width:min(760px,96%);max-height:92vh;overflow:auto;background:#f8edd6;border:4px solid var(--brown);border-radius:12px;padding:18px;box-shadow:0 12px 35px rgba(0,0,0,.45)}.modal h2{margin-top:0}.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field label{display:block;font-weight:700;margin-bottom:4px}.field input,.field select,.field textarea{width:100%;padding:9px;border:1px solid #9c825e;border-radius:5px;background:#fffaf0}.field textarea{min-height:105px;resize:vertical}.full{grid-column:1/-1}.modalActions{display:flex;justify-content:flex-end;gap:8px;margin-top:13px}.hint{font-size:13px;color:#6f5c43;line-height:1.4}.voiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.voiceFull{grid-column:1/-1}.voiceField label{display:block;font-weight:700;margin-bottom:4px}.voiceField input,.voiceField select,.voiceField textarea{width:100%;padding:9px;border:1px solid #9c825e;border-radius:5px;background:#fffaf0}.voiceField textarea{min-height:85px}.fileNote{background:#fff8e9;border-left:5px solid #8d6840;padding:9px 11px;margin:8px 0;font-size:13px}.small{font-size:12px;color:#6f5c43}.personFileActions{display:flex;gap:7px;flex-wrap:wrap}.hidden{display:none!important}
@@ -106,8 +106,107 @@ function migrateMaria(){const p=profiles['maria-armenta'];try{const old=localSto
 function saveProfiles(queueCloud=true){try{localStorage.setItem(STORE,JSON.stringify(profiles));localStorage.setItem(STORE+'Active',activeId)}catch(e){alert('The browser could not save everything. Large portraits can fill browser storage. Export your ancestor files as backups.')}if(queueCloud&&cloudUser){clearTimeout(cloudTimer);cloudTimer=setTimeout(syncAllProfilesToCloud,650)}}
 function setCloudStatus(message,state=''){const el=document.getElementById('cloudStatus');el.textContent=message;el.className='cloudStatus '+state}
 function updateAuthUI(){const signed=!!cloudUser;document.getElementById('authEmail').style.display=signed?'none':'';document.getElementById('authPassword').style.display=signed?'none':'';document.getElementById('signInBtn').style.display=signed?'none':'';document.getElementById('signUpBtn').style.display=signed?'none':'';document.getElementById('signOutBtn').style.display=signed?'':'none';if(signed)setCloudStatus('Signed in as '+(cloudUser.email||'user')+' — cloud saving is on.','ok')}
-async function syncAllProfilesToCloud(){if(!cloudUser||cloudLoading)return;setCloudStatus('Saving to cloud…');try{const rows=Object.values(profiles).map(p=>({user_id:cloudUser.id,app_id:p.id,full_name:p.name||'Unnamed ancestor',birth_date:p.birthDate||'',birth_place:p.birthPlace||'',profile_data:p,updated_at:new Date().toISOString()}));if(rows.length){const {error}=await cloudClient.from('people').upsert(rows,{onConflict:'user_id,app_id'});if(error)throw error}const {data:existing,error:readError}=await cloudClient.from('people').select('id,app_id').eq('user_id',cloudUser.id);if(readError)throw readError;const keep=new Set(rows.map(r=>r.app_id));for(const row of (existing||[])){if(!keep.has(row.app_id)){const {error}=await cloudClient.from('people').delete().eq('id',row.id).eq('user_id',cloudUser.id);if(error)throw error}}setCloudStatus('Saved to cloud at '+new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}),'ok')}catch(err){console.error(err);setCloudStatus('Cloud save failed: '+(err.message||err),'bad')}}
-async function loadProfilesFromCloud(){if(!cloudUser)return;cloudLoading=true;setCloudStatus('Loading your cloud data…');try{const {data,error}=await cloudClient.from('people').select('app_id,profile_data').eq('user_id',cloudUser.id).order('created_at');if(error)throw error;if(data&&data.length){const loaded={};for(const row of data){if(row.profile_data){const p=row.profile_data;p.id=p.id||row.app_id;loaded[p.id]=p}}if(Object.keys(loaded).length){profiles=loaded;activeId=profiles[activeId]?activeId:Object.keys(profiles)[0];saveProfiles(false);renderAll();resetConversation()}}else{await syncAllProfilesToCloud()}setCloudStatus('Signed in — cloud data loaded.','ok')}catch(err){console.error(err);setCloudStatus('Could not load cloud data: '+(err.message||err),'bad')}finally{cloudLoading=false}}
+async function syncAllProfilesToCloud(){
+  if(!cloudUser||cloudLoading)return;
+  setCloudStatus('Saving to cloud…');
+  try{
+    const rows=Object.values(profiles).map(p=>({
+      user_id:cloudUser.id,
+      app_id:p.id,
+      full_name:p.name||'Unnamed ancestor',
+      birth_date:p.birthDate||'',
+      birth_place:p.birthPlace||'',
+      profile_data:p,
+      updated_at:new Date().toISOString()
+    }));
+
+    // Preferred format when app_id/profile_data columns are available.
+    let legacyError=null;
+    if(rows.length){
+      const result=await cloudClient.from('people').upsert(rows,{onConflict:'user_id,app_id'});
+      legacyError=result.error;
+    }
+    if(!legacyError){
+      const {data:existing,error:readError}=await cloudClient.from('people').select('id,app_id').eq('user_id',cloudUser.id);
+      if(readError)throw readError;
+      const keep=new Set(rows.map(r=>r.app_id));
+      for(const row of(existing||[])){
+        if(!keep.has(row.app_id)){
+          const {error}=await cloudClient.from('people').delete().eq('id',row.id).eq('user_id',cloudUser.id);
+          if(error)throw error;
+        }
+      }
+    }else{
+      // Fallback for the original people table: the whole ancestor profile is
+      // stored as JSON in private_notes. This requires no additional SQL.
+      const {error:deleteError}=await cloudClient.from('people').delete().eq('user_id',cloudUser.id);
+      if(deleteError)throw deleteError;
+      const fallbackRows=Object.values(profiles).map(p=>({
+        user_id:cloudUser.id,
+        full_name:p.name||'Unnamed ancestor',
+        birth_date:p.birthDate||'',
+        birth_place:p.birthPlace||'',
+        alternate_names:'app_id:'+p.id,
+        biography:'Voices of the Past ancestor profile',
+        private_notes:JSON.stringify(p),
+        updated_at:new Date().toISOString()
+      }));
+      if(fallbackRows.length){
+        const {error}=await cloudClient.from('people').insert(fallbackRows);
+        if(error)throw error;
+      }
+    }
+    setCloudStatus('Saved to cloud at '+new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}),'ok');
+  }catch(err){
+    console.error(err);
+    setCloudStatus('Cloud save failed: '+(err.message||err),'bad');
+  }
+}
+async function loadProfilesFromCloud(){
+  if(!cloudUser)return;
+  cloudLoading=true;
+  setCloudStatus('Loading your cloud data…');
+  try{
+    let loaded={};
+    const preferred=await cloudClient.from('people').select('app_id,profile_data').eq('user_id',cloudUser.id).order('created_at');
+    if(!preferred.error&&preferred.data){
+      for(const row of preferred.data){
+        if(row.profile_data){
+          const p=row.profile_data;
+          p.id=p.id||row.app_id;
+          loaded[p.id]=p;
+        }
+      }
+    }else{
+      const fallback=await cloudClient.from('people').select('alternate_names,private_notes').eq('user_id',cloudUser.id).order('created_at');
+      if(fallback.error)throw fallback.error;
+      for(const row of(fallback.data||[])){
+        if(!row.private_notes)continue;
+        try{
+          const p=JSON.parse(row.private_notes);
+          const storedId=String(row.alternate_names||'').replace(/^app_id:/,'');
+          p.id=p.id||storedId||makeId();
+          loaded[p.id]=p;
+        }catch(parseError){console.warn('Skipped an unreadable cloud profile',parseError)}
+      }
+    }
+    if(Object.keys(loaded).length){
+      profiles=loaded;
+      activeId=profiles[activeId]?activeId:Object.keys(profiles)[0];
+      saveProfiles(false);
+      renderAll();
+      resetConversation();
+    }else{
+      await syncAllProfilesToCloud();
+    }
+    setCloudStatus('Signed in — cloud data loaded.','ok');
+  }catch(err){
+    console.error(err);
+    setCloudStatus('Could not load cloud data: '+(err.message||err),'bad');
+  }finally{
+    cloudLoading=false;
+  }
+}
 async function signIn(){const email=document.getElementById('authEmail').value.trim(),password=document.getElementById('authPassword').value;if(!email||!password){alert('Enter your email and password.');return}setCloudStatus('Signing in…');const {error}=await cloudClient.auth.signInWithPassword({email,password});if(error){setCloudStatus(error.message,'bad');alert(error.message)}}
 async function signUp(){const email=document.getElementById('authEmail').value.trim(),password=document.getElementById('authPassword').value;if(!email||password.length<6){alert('Enter your email and a password of at least 6 characters.');return}setCloudStatus('Creating account…');const {data,error}=await cloudClient.auth.signUp({email,password,options:{emailRedirectTo:'https://yelofirb27.github.io/Voices-of-the-Past/'}});if(error){setCloudStatus(error.message,'bad');alert(error.message);return}if(data.session)setCloudStatus('Account created and signed in.','ok');else{setCloudStatus('Check your email, click the confirmation link, then return and sign in.','ok');alert('Check your email for a confirmation link from Supabase.')}}
 async function signOut(){await cloudClient.auth.signOut();cloudUser=null;updateAuthUI();setCloudStatus('Signed out — changes now save only on this browser.')}
@@ -171,8 +270,67 @@ function historicalFacts(y,q=''){const contexts=factsUpTo(y,['Historical Context
 function historicalPersonAnswer(person,y,q){const list=factsUpTo(y,['Historical Context']).filter(f=>normalizeName(f.person)===normalizeName(person)||normalizeName((f.text||'')).includes(normalizeName(person)));if(!list.length)return null;return`I heard that ${list.slice(-1)[0].text.replace(/^In\s+/i,'in ')}`.replace(/\.\.?$/,'.')}
 async function historicalContext(y,q){const saved=historicalFacts(y,q);if(saved.length){const f=saved[0];return`I heard that ${f.text.charAt(0).toLowerCase()+f.text.slice(1)}`.replace(/\.\.?$/,'.')}const place=currentResidence(y);internetStatus.textContent=`Looking for public historical information about ${place} around ${y}…`;const queries=[`${place} ${y} history`,`${place} history ${Math.floor(y/10)*10}s`];let snippets=[];for(const query of queries){try{const url='https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=3&srsearch='+encodeURIComponent(query);const r=await fetch(url);if(!r.ok)continue;const data=await r.json();for(const x of((data.query&&data.query.search)||[])){const d=document.createElement('div');d.innerHTML=x.snippet;const t=d.textContent.replace(/\s+/g,' ').trim();if(t&&!snippets.includes(t))snippets.push(t)}}catch(e){}}internetStatus.textContent='';if(!snippets.length)return"I'm sorry, I don't know much news beyond my own affairs.";return`There is much happening around us. ${snippets.slice(0,2).join(' ').slice(0,650)}`}
 function namedPersonAnswer(q,y){const person=subjectNameFromQuestion(q);if(!person)return null;const rel=relationshipFor(person);if(['Historical Person / Not Family','Other'].includes(rel)){const h=historicalPersonAnswer(person,y,q);if(h)return h}if(/\bmother\b/.test(q)){if(['Son','Daughter','Child'].includes(rel))return`I am ${person.split(' ')[0]}'s mother.`;return unknown()}if(/\bfather\b/.test(q)){if(['Son','Daughter','Child'].includes(rel)){const sp=spouseName();return sp?`${person.split(' ')[0]}'s father was my spouse, ${sp}.`:unknown()}return unknown()}if(/bapti|christen/.test(q))return answerPersonEvent(person,'Baptism',y,q)||unknown();if(/born|birth/.test(q))return answerPersonEvent(person,'Birth',y,q)||unknown();if(/died|death|die\b/.test(q))return answerPersonEvent(person,'Death',y,q)||historicalPersonAnswer(person,y,q)||unknown();const h=historicalPersonAnswer(person,y,q);if(h)return h;return`${capitalize(possessiveSubject(person))} is someone in my research.`}
-function genericFact(q,y){const words=q.toLowerCase().match(/[a-z]{4,}/g)||[];let best=null,score=0;for(const f of selfFacts(y)){const hay=((f.text||'')+' '+(f.place||'')+' '+(f.type||'')+' '+(f.notes||'')).toLowerCase();let s=words.reduce((n,w)=>n+(hay.includes(w)?1:0),0);if(s>score){score=s;best=f}}return score>=2?best:null}
-async function answer(text){const q=text.toLowerCase().trim(),y=getYear();const named=namedPersonAnswer(q,y);if(named)return named;if(/bapti|christen/.test(q))return selfEvent('Baptism',y,q);if(/when were you born|where were you born|\bbirth\b|were you born/.test(q))return selfEvent('Birth',y,q);if(/spouse|husband|wife|married|marriage/.test(q))return spouseAnswer(y);if(/children|child|sons?|daughters?|kids/.test(q))return childrenAnswer(y);if(/\bmother\b/.test(q))return parentAnswer('mother',y);if(/\bfather\b/.test(q))return parentAnswer('father',y);if(/\bparents?\b/.test(q))return parentAnswer('parents',y);if(/happening|news|history|going on|around here|what happened/.test(q))return await historicalContext(y,q);if(/where do you live|where are you living|your home|residence/.test(q))return`I am living in ${currentResidence(y)}.`;if(/cattle\s*brand|livestock\s*brand|\bbrand\b/.test(q))return brandAnswer(y,q);if(/\bcattle\b|\blivestock\b|\bcows?\b/.test(q))return cattleAnswer(y,q);if(/\bland\b|land claim|grant|rancho/.test(q))return landAnswer(y,q);if(/\bloan\b|debt|borrow|jackson/.test(q))return loanAnswer(y,q);if(/work|job|occupation|property/.test(q))return workAnswer(y);if(/how old|your age/.test(q)){const a=getAge(y);return a===null?unknown():`I am about ${a} years old.`}if(/who are you|your name/.test(q))return`My name is ${selfName()}.`;const f=genericFact(q,y);if(f)return toFirstPerson(f.text);return unknown()}
+function questionWords(q){
+  const stop=new Set(['what','when','where','which','who','whom','whose','why','how','your','you','yours','were','was','are','is','did','does','do','tell','about','please','like','favorite','favourite','have','has','had','the','and','with','from','that','this','there','their','would','could']);
+  return (String(q||'').toLowerCase().match(/[a-z]{3,}/g)||[])
+    .map(w=>w.endsWith('s')&&w.length>4?w.slice(0,-1):w)
+    .filter(w=>!stop.has(w));
+}
+function factHaystack(f){
+  return ((f.person||'')+' '+(f.text||'')+' '+(f.place||'')+' '+(f.type||'')+' '+(f.notes||''))
+    .toLowerCase().replace(/[^a-z0-9]+/g,' ');
+}
+function genericFact(q,y){
+  const words=questionWords(q);
+  let best=null,bestScore=0;
+  for(const f of selfFacts(y)){
+    const hay=factHaystack(f);
+    let score=0;
+    for(const w of words){
+      if(hay.includes(w))score+=w.length>=6?3:2;
+    }
+    // Prefer explicit self facts and recent facts when scores tie.
+    if((f.relationship||'Self')==='Self')score+=0.25;
+    if(score>bestScore){bestScore=score;best=f}
+  }
+  return bestScore>=2?best:null;
+}
+function directPreferenceAnswer(q,y){
+  const preferenceTests=[
+    {re:/favou?rite\s+colou?r|what\s+colou?r.*like|colou?r.*favou?rite/,terms:['color','colour']},
+    {re:/favou?rite\s+food|what.*food.*like/,terms:['food','eat','meal']},
+    {re:/favou?rite\s+(song|music)|what.*music.*like/,terms:['song','music']}
+  ];
+  for(const test of preferenceTests){
+    if(!test.re.test(q))continue;
+    const list=selfFacts(y).filter(f=>test.terms.some(t=>factHaystack(f).includes(t)));
+    if(list.length)return toFirstPerson(list.slice(-1)[0].text);
+  }
+  return null;
+}
+async function answer(text){
+  const q=text.toLowerCase().trim(),y=getYear();
+  const preference=directPreferenceAnswer(q,y);if(preference)return preference;
+  const named=namedPersonAnswer(q,y);if(named)return named;
+  if(/bapti|christen/.test(q))return selfEvent('Baptism',y,q);
+  if(/when were you born|where were you born|\bbirth\b|were you born/.test(q))return selfEvent('Birth',y,q);
+  if(/spouse|husband|wife|married|marriage/.test(q))return spouseAnswer(y);
+  if(/children|child|sons?|daughters?|kids/.test(q))return childrenAnswer(y);
+  if(/\bmother\b/.test(q))return parentAnswer('mother',y);
+  if(/\bfather\b/.test(q))return parentAnswer('father',y);
+  if(/\bparents?\b/.test(q))return parentAnswer('parents',y);
+  if(/happening|news|history|going on|around here|what happened/.test(q))return await historicalContext(y,q);
+  if(/where do you live|where are you living|your home|residence/.test(q))return`I am living in ${currentResidence(y)}.`;
+  if(/cattle\s*brand|livestock\s*brand|\bbrand\b/.test(q))return brandAnswer(y,q);
+  if(/\bcattle\b|\blivestock\b|\bcows?\b/.test(q))return cattleAnswer(y,q);
+  if(/\bland\b|land claim|grant|rancho/.test(q))return landAnswer(y,q);
+  if(/\bloan\b|debt|borrow|jackson/.test(q))return loanAnswer(y,q);
+  if(/work|job|occupation|property/.test(q))return workAnswer(y);
+  if(/how old|your age/.test(q)){const a=getAge(y);return a===null?unknown():`I am about ${a} years old.`}
+  if(/who are you|your name/.test(q))return`My name is ${selfName()}.`;
+  const f=genericFact(q,y);if(f)return toFirstPerson(f.text);
+  return unknown();
+}
 async function askQuestion(){const inp=document.getElementById('question'),text=inp.value.trim();if(!text)return;addUser(text);inp.value='';thinking(true);const a=await answer(text);thinking(false);addAncestor(voicePolish(a))}
 function quickAsk(t){document.getElementById('question').value=t;askQuestion()}
 function resetConversation(){chat.innerHTML='';const y=getYear(),a=getAge(y);let g=`My name is ${firstName()}. It is ${y}${a===null?'':`, and I am about ${a} years old`}. What would you like to ask me?`;addAncestor(voicePolish(g,'greeting'))}
